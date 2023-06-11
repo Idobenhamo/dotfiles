@@ -1,0 +1,25 @@
+[[language]]
+name = "python"
+scope = "source.python"
+language-servers = ["pylsp"]
+formatter = { command = "black", args = ["--quiet", "--line-length", "88", "-"] }
+auto-format = true
+
+[[language]]
+name = "typst"
+scope = "source.typst"
+file-types = ["typ"]
+comment-token = "//"
+roots = []
+language-servers = ["typst-lsp", "ltex-ls" ]
+
+[language-server.pylsp]
+command = "pylsp"
+config = { settings = { args = [], pylsp = { plugins = { ruff = { enabled = true } } } } }
+
+[language-server.ltex-ls]
+command = "ltex-ls" 
+config = { ltex.language = "en-US" }
+
+[language-server.typst-lsp]
+command = "typst-lsp" 
