@@ -23,3 +23,4 @@ config = { ltex.language = "en-US" }
 
 [language-server.typst-lsp]
 command = "typst-lsp" 
+config = { exportPdf = "never" }
