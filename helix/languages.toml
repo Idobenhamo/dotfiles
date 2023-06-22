@@ -13,6 +13,10 @@ comment-token = "//"
 roots = []
 language-servers = ["typst-lsp", "ltex-ls" ]
 
+[[language]]
+name = "markdown"
+language-servers = ["marksman", "ltex-ls" ]
+
 [language-server.pylsp]
 command = "pylsp"
 config = { settings = { args = [], pylsp = { plugins = { ruff = { enabled = true } } } } }
@@ -23,4 +27,4 @@ config = { ltex.language = "en-US" }
 
 [language-server.typst-lsp]
 command = "typst-lsp" 
-config = { exportPdf = "never" }
+config = {exportPdf = "never" }
