@@ -17,6 +17,10 @@ language-servers = ["typst-lsp", "ltex-ls" ]
 name = "markdown"
 language-servers = ["marksman", "ltex-ls" ]
 
+[[grammar]]
+name = "typst"
+source = { git = "https://github.com/frozolotl/tree-sitter-typst", rev = "50915c5fefd6d6d2f48b3e6da7136cb0138b160a"}
+
 [language-server.pylsp]
 command = "pylsp"
 config = { settings = { args = [], pylsp = { plugins = { ruff = { enabled = true } } } } }
