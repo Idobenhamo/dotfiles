@@ -2,7 +2,7 @@
 name = "python"
 scope = "source.python"
 language-servers = ["pylsp"]
-formatter = { command = "black", args = ["--quiet", "--line-length", "88", "-"] }
+formatter = { command = "black", args = ["--quiet", "-"] }
 auto-format = true
 
 [[language]]
@@ -11,7 +11,7 @@ scope = "source.typst"
 file-types = ["typ"]
 comment-token = "//"
 roots = []
-language-servers = ["typst-lsp", "ltex-ls" ]
+language-servers = ["typst-lsp", "ltex-ls"]
 
 [[language]]
 name = "markdown"
@@ -27,8 +27,7 @@ config = { settings = { args = [], pylsp = { plugins = { ruff = { enabled = true
 
 [language-server.ltex-ls]
 command = "ltex-ls" 
-config = { ltex.language = "en-US" }
+config.ltex.language = "en-US" 
 
 [language-server.typst-lsp]
 command = "typst-lsp" 
-config = {exportPdf = "never" }
