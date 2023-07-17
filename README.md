@@ -8,6 +8,7 @@ This repo is for my personal configs.
 - [fzf](https://github.com/junegunn/fzf)
 - [GitUI](https://github.com/extrawurst/gitui)
 - [Helix](https://github.com/helix-editor/helix)
+- [Nala](https://github.com/volitank/nala)
 - [Pandoc](https://github.com/jgm/pandoc)
 - [Poetry](https://github.com/python-poetry/poetry)
 - [Sioyek](https://github.com/ahrm/sioyek)
