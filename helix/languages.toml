@@ -5,6 +5,10 @@ formatter = { command = "black", args = ["--quiet", "-"] }
 auto-format = true
 
 [[language]]
+name = "markdown"
+language-servers = ["marksman", "ltex-ls" ]
+
+[[language]]
 name = "typst"
 scope = "source.typst"
 injection-regex = "^typ(st)?$"
@@ -13,17 +17,12 @@ comment-token = "//"
 language-servers = ["typst-lsp", "ltex-ls"]
 roots = []
 
-[[language]]
-name = "markdown"
-language-servers = ["marksman", "ltex-ls" ]
-
 [[grammar]]
 name = "typst"
-source = { git = "https://github.com/frozolotl/tree-sitter-typst", rev = "04462e79b46e0b502597f97cb7aa8e34653ce237"}
+source = { git = "https://github.com/frozolotl/tree-sitter-typst", rev = "b345818903b55ea01ab351c13e25b2d2dd9dd395"}
 
 [language-server.ltex-ls]
 command = "ltex-ls" 
-config.ltex.language = "en-US" 
 
 [language-server.typst-lsp]
 command = "typst-lsp" 
