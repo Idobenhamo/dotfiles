@@ -1,8 +1,13 @@
 [[language]]
 name = "python"
-language-servers = ["pyright"]
-formatter = { command = "black", args = ["--quiet", "-"] }
 auto-format = true
+language-servers = [
+  {name = "pyright", except-features = ["diagnostics"]},
+  {name = "ruff"}
+]
+
+[language-server.ruff]
+command = "ruff-lsp"
 
 [[language]]
 name = "markdown"
@@ -28,11 +33,7 @@ language-servers = ["typst-lsp"]
 
 [[grammar]]
 name = "typst"
-source = { git = "https://github.com/uben0/tree-sitter-typst/", rev = "791cac478226e3e78809b67ff856010bde709594" }
-
-[language-server.ltex-ls]
-command = "ltex-ls" 
+source = { git = "https://github.com/uben0/tree-sitter-typst/", rev = "e35aa22395fdde82bbc4b5700c324ce346dfc9e5" }
 
 [language-server.typst-lsp]
 command = "typst-lsp" 
-
