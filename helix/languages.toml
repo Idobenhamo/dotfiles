@@ -13,6 +13,10 @@ command = "ruff-lsp"
 name = "markdown"
 language-servers = ["marksman", "ltex-ls" ]
 
+[[language]] 
+name = "typst"
+formatter.command = "typstfmt"
+
 [language-server.typst-lsp]
 command = "typst-lsp"
 config = { exportPdf = "never" }
