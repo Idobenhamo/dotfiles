@@ -15,7 +15,10 @@ language-servers = ["marksman", "ltex-ls" ]
 
 [[language]] 
 name = "typst"
-formatter.command = "typstfmt"
+
+[language.formatter]
+command = "prettypst"
+args = ["--use-std-in","--use-std-out"]
 
 [language-server.typst-lsp]
 command = "typst-lsp"
