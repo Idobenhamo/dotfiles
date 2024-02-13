@@ -16,10 +16,6 @@ language-servers = ["marksman", "ltex-ls" ]
 [[language]] 
 name = "typst"
 
-[language.formatter]
-command = "prettypst"
-args = ["--use-std-in","--use-std-out"]
-
 [language-server.typst-lsp]
 command = "typst-lsp"
 config = { exportPdf = "never" }
