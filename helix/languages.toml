@@ -11,11 +11,12 @@ command = "ruff-lsp"
 
 [[language]]
 name = "markdown"
-language-servers = ["marksman", "ltex-ls" ]
+language-servers = ["markdown-oxide","ltex-ls"]
 
 [[language]] 
 name = "typst"
+language-servers = ["tinymist","ltex-ls"]
 
-[language-server.typst-lsp]
-command = "typst-lsp"
-config = { exportPdf = "never" }
+[language-server.tinymist]
+command = "tinymist"
+config = { formatterMode = "typstyle" }

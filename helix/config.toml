@@ -4,6 +4,9 @@ theme = "onedark"
 line-number = "relative" # relative line numbers
 true-color = true
 
+[editor.lsp]
+display-inlay-hints = true
+
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
@@ -14,3 +17,6 @@ render = true
 
 [editor.soft-wrap]
 enable = true
+
+[keys.normal.space]
+"ret" = ":lsp-workspace-command"
