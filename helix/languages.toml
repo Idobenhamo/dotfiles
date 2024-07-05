@@ -1,13 +1,11 @@
 [[language]]
 name = "python"
+language-servers = ["ruff"]
 auto-format = true
-language-servers = [
-  {name = "pyright", except-features = ["diagnostics"]},
-  {name = "ruff"}
-]
 
 [language-server.ruff]
-command = "ruff-lsp"
+command = "ruff"
+args = ["server", "--preview"]
 
 [[language]]
 name = "markdown"
