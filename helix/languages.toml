@@ -9,12 +9,16 @@ args = ["server"]
 
 [[language]]
 name = "markdown"
-language-servers = ["markdown-oxide","ltex-ls"]
+language-servers = ["markdown-oxide","harper-ls"]
 
 [[language]] 
 name = "typst"
-language-servers = ["tinymist","ltex-ls"]
+language-servers = ["tinymist","harper-ls"]
 
 [language-server.tinymist]
 command = "tinymist"
 config = { formatterMode = "typstyle" }
+
+[language-server.harper-ls]
+command = "harper-ls"
+args = ["--stdio"]
