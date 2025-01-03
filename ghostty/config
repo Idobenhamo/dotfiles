@@ -1,0 +1,4 @@
+window-decoration = true
+gtk-titlebar = false
+font-family = JetBrainsMono Nerd Font
+theme = DoomOne
