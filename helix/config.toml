@@ -5,7 +5,7 @@ line-number = "relative" # relative line numbers
 true-color = true
 
 [editor.lsp]
-display-inlay-hints = true
+display-inlay-hints = true #maybe delete this
 
 [editor.cursor-shape]
 insert = "bar"

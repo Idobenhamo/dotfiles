@@ -1,0 +1,23 @@
+[window]
+opacity = 1.0
+# padding = { x = 6, y = 6}
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+size = 12.0
+
+# Doom One Theme (https://github.com/alacritty/alacritty-theme)
+
+[colors.primary]
+background = '#282c34'
+foreground = '#bbc2cf'
+
+[colors.normal]
+black   = '#282c34'
+red     = '#ff6c6b'
+green   = '#98be65'
+yellow  = '#ecbe7b'
+blue    = '#51afef'
+magenta = '#c678dd'
+cyan    = '#46d9ff'
+white   = '#bbc2cf'
