@@ -2,10 +2,11 @@ theme = "onedark"
 
 [editor]
 line-number = "relative" # relative line numbers
-true-color = true
+bufferline = "multiple" # displaying open buffers (default is never)
+rainbow-brackets = true
 
 [editor.lsp]
-display-inlay-hints = true #maybe delete this
+display-inlay-hints = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -18,5 +19,7 @@ render = true
 [editor.soft-wrap]
 enable = true
 
-[keys.normal.space]
-"ret" = ":lsp-workspace-command"
+[keys.normal]
+space.ret = ":lsp-workspace-command"
+space.t = "@<space>/<minus><space>\\[<space>\\]" # global search for tasks
+C-p = ':lsp-workspace-command tinymist.pinMain "%sh{realpath %{buffer_name}}"' # for typst
